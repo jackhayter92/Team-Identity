@@ -1,0 +1,239 @@
+/*====================
+general - font/applies to more than one area
+=====================*/
+
+body {
+	font-family: sans-serif;
+}
+
+.hobbies h2,
+.faveVideo h2,
+.background h2 {
+	font-size: 25px;
+	color: #CCC;
+}
+
+.faveVideo,
+.hobbies,
+.background {
+	background-color: #369;
+	padding: 15px 30px;
+	border-bottom: 2px solid #CCC;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.idcard,
+.idcardcol,
+.hobbies,
+.faveVideo,
+.background,
+.joke {
+	margin-left:10px;
+	margin-right: 10px;
+	width: 550px;
+}
+
+/*======================
+container
+======================*/
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	width:95%;
+	background: #ccc;
+} 
+
+/*======================
+Header
+=======================*/
+.header {
+	background-color: #036;
+}
+
+.header h1 {
+	font-size: 40px;
+	padding: 15px 25px;
+	color: #CCC;
+}
+
+/*=====================
+ID card
+======================*/
+.idcard {
+	background-color: #369;
+	height: 200px;
+	padding: 30px;
+	margin-bottom: 10px;
+}
+
+.idcard img {
+	float: left;
+	padding-right: 30px;
+}
+
+.idcard h1 {
+	color: #CCC;
+	font-size: 35px;
+	padding-bottom: 10px;
+	margin: 0;
+}
+
+.idcard h3 {
+	color: #333;
+	padding-top: 0;
+	margin-bottom: 10px;
+}
+
+.idcard p {
+	font-size: 20px;
+	padding-left: 10px;
+	text-decoration: none;
+	color: #D5A725;
+	margin: 0;
+	display: inline-block;
+}
+
+.idcard p:hover {
+	color: #ffdead;
+}
+
+.social {
+	margin: 10px;
+}
+
+/*==========================
+Id card icons
+==========================*/
+
+.foundicon-facebook, 
+.foundicon-twitter,
+.foundicon-google-plus,
+.foundicon-linkedin {
+	font-size: 20px;
+	color: white;
+	padding:1%;
+	padding-right: 5%;
+	border-radius: 5px;
+	font-size: 17px;
+	margin-right: 4px;
+}
+
+.foundicon-facebook:hover, 
+.foundicon-twitter:hover,
+.foundicon-google-plus:hover,
+.foundicon-linkedin:hover {
+	border:1px solid white;
+}
+
+.foundicon-facebook {
+	background-color: #23476A;
+}
+
+.foundicon-twitter {
+	background-color: #00ABF0;
+}
+
+.foundicon-google-plus {
+	background-color: #A92A24;
+}
+
+.foundicon-linkedin {
+	background-color: black;
+} 
+
+.foundicon-mail,
+.foundicon-phone {
+	color: #D5A725;
+	padding-bottom: 15px;
+	display: inline-block;
+}
+
+/*====================
+hobbies
+====================*/
+
+.hobbies li {
+	list-style: none;
+	padding: 0;
+}
+
+.hobbies ul {
+	padding:0;
+}
+
+/*====================
+video
+=====================*/
+
+.faveVideo video {
+	width: 100%;
+}
+
+/*=====================
+background
+=======================*/
+
+.background label {
+	font-size: 19px;
+}
+
+.background select {
+	width:50%;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.background textarea {
+	font-size: 15px;
+	resize:none;
+}
+
+.background p {
+	width: 25%;
+	margin:auto;
+	display: block;
+	text-align: center;
+}
+
+.languages {
+	width: 400px;
+	height: 50px;
+}
+
+
+/*======================
+joke
+======================*/
+
+.joke {
+	background-image:url(../img/jokebg.jpg);
+	padding:15px 30px;
+	border-bottom: 2px solid #CCC;
+}
+
+.joke blockquote {
+	font-size: 20px;
+	font-style: italic;
+	color: #CCC;
+	background-color: rgba(0,0,0, .5);
+}
+
+/*=====================
+footer
+=====================*/
+
+.footer {
+	background: #036;
+}
+
+.footer h2 {
+	color:#CCC;
+	padding:15px;
+	text-align: right;
+}
+
+.info {
+	vertical-align: baseline; 
+}
