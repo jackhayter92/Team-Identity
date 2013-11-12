@@ -1,22 +1,22 @@
 /*====================
-general - font/applies to more than one area
+general - fonts/applies to more than one area
 =====================*/
 
 body {
 	font-family: sans-serif;
+	background: #ccc;
 }
 
 .hobbies h2,
 .faveVideo h2,
-.background h2 {
+.moreinfo h2 {
 	font-size: 25px;
 	color: #CCC;
 }
 
 .faveVideo,
 .hobbies,
-.background {
-	background-color: #369;
+.moreinfo {
 	padding: 15px 30px;
 	border-bottom: 2px solid #CCC;
 	margin-top: 0px;
@@ -24,45 +24,47 @@ body {
 }
 
 .idcard,
-.idcardcol,
 .hobbies,
 .faveVideo,
-.background,
+.moreinfo,
 .joke {
+	background-color: #369;
 	margin-left:10px;
 	margin-right: 10px;
-	width: 550px;
+	width: 88%;
 }
 
 /*======================
-container
+Right and left divs
 ======================*/
+.right,
+.left {
+	width: 50%;
+	margin-top: 15px;
+}
 
-.container {
-	margin-right: auto;
-	margin-left: auto;
-	width:95%;
-	background: #ccc;
-} 
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
 
 /*======================
 Header
 =======================*/
-.header {
+header {
 	background-color: #036;
-}
-
-.header h1 {
 	font-size: 40px;
-	padding: 15px 25px;
 	color: #CCC;
+	padding: 15px 25px;
 }
 
 /*=====================
 ID card
 ======================*/
 .idcard {
-	background-color: #369;
 	height: 200px;
 	padding: 30px;
 	margin-bottom: 10px;
@@ -78,70 +80,28 @@ ID card
 	font-size: 35px;
 	padding-bottom: 10px;
 	margin: 0;
+	vertical-align: top;
 }
 
 .idcard h3 {
 	color: #333;
-	padding-top: 0;
+	margin-top: 0;
 	margin-bottom: 10px;
 }
 
-.idcard p {
+.email a,
+.phone a {
 	font-size: 20px;
-	padding-left: 10px;
 	text-decoration: none;
 	color: #D5A725;
 	margin: 0;
 	display: inline-block;
 }
 
-.idcard p:hover {
+.email a:hover
+.phone a:hover {
 	color: #ffdead;
 }
-
-.social {
-	margin: 10px;
-}
-
-/*==========================
-Id card icons
-==========================*/
-
-.foundicon-facebook, 
-.foundicon-twitter,
-.foundicon-google-plus,
-.foundicon-linkedin {
-	font-size: 20px;
-	color: white;
-	padding:1%;
-	padding-right: 5%;
-	border-radius: 5px;
-	font-size: 17px;
-	margin-right: 4px;
-}
-
-.foundicon-facebook:hover, 
-.foundicon-twitter:hover,
-.foundicon-google-plus:hover,
-.foundicon-linkedin:hover {
-	border:1px solid white;
-}
-
-.foundicon-facebook {
-	background-color: #23476A;
-}
-
-.foundicon-twitter {
-	background-color: #00ABF0;
-}
-
-.foundicon-google-plus {
-	background-color: #A92A24;
-}
-
-.foundicon-linkedin {
-	background-color: black;
-} 
 
 .foundicon-mail,
 .foundicon-phone {
@@ -149,6 +109,82 @@ Id card icons
 	padding-bottom: 15px;
 	display: inline-block;
 }
+
+.contactdetails {
+	height: 200px;
+	width: 356px;
+	float: right;
+}
+
+.contactdetails ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.contactdetails a {
+	text-decoration: none;
+}
+
+.contactdetails i {
+	margin-right: 10px;
+}
+
+/*==========================
+social icons
+==========================*/
+.social {
+	margin: 10px;
+}
+
+.social ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.social li {
+	display: inline;
+}
+
+#facebook {
+	background-color: #23476A;
+}
+
+#twitter {
+	background-color: #00ABF0;
+}
+
+#google {
+	background-color: #A92A24;
+}
+
+#linkedin {
+	background-color: #000;
+}
+
+#facebook,
+#twitter,
+#google,
+#linkedin {
+	border-radius: 5px;
+	border:none;
+	width: 18%;
+	height: 37px;
+	margin-right: 1%;
+}
+
+i {
+	color: #fff;
+	font-size: 20px;
+}
+
+#facebook:hover,
+#twitter:hover,
+#google:hover,
+#linkedin:hover {
+	border: 1px solid #fff;
+}
+
 
 /*====================
 hobbies
@@ -172,45 +208,50 @@ video
 }
 
 /*=====================
-background
+More info
 =======================*/
 
-.background label {
-	font-size: 19px;
-}
-
-.background select {
-	width:50%;
-	margin-left: 20px;
+.moreinfo select, 
+.moreinfo textarea,
+.moreinfo table {
 	margin-bottom: 10px;
 }
 
-.background textarea {
+.moreinfo label {
+	font-size: 19px;
+}
+
+.moreinfo select {
+	width:50%;
+	margin-left: 20px;
+}
+
+.moreinfo textarea {
 	font-size: 15px;
-	resize:none;
+	resize: none;
 }
 
-.background p {
-	width: 25%;
-	margin:auto;
+.formbutton {
 	display: block;
-	text-align: center;
 }
 
-.languages {
-	width: 400px;
-	height: 50px;
+.moreinfo table {
+	width: 75%;
 }
 
-
+.moreinfo form {
+	margin:0;
+}
 /*======================
 joke
 ======================*/
 
 .joke {
 	background-image:url(../img/jokebg.jpg);
-	padding:15px 30px;
+	padding:25px 30px 25px;
 	border-bottom: 2px solid #CCC;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .joke blockquote {
@@ -226,6 +267,8 @@ footer
 
 .footer {
 	background: #036;
+	clear: both;
+
 }
 
 .footer h2 {
@@ -234,6 +277,3 @@ footer
 	text-align: right;
 }
 
-.info {
-	vertical-align: baseline; 
-}
