@@ -146,26 +146,26 @@ social icons
 	display: inline;
 }
 
-#facebook {
+.facebook {
 	background-color: #23476A;
 }
 
-#twitter {
+.twitter {
 	background-color: #00ABF0;
 }
 
-#google {
+.google {
 	background-color: #A92A24;
 }
 
-#linkedin {
+.linkedin {
 	background-color: #000;
 }
 
-#facebook,
-#twitter,
-#google,
-#linkedin {
+.facebook,
+.twitter,
+.google,
+.linkedin {
 	border-radius: 5px;
 	border:none;
 	width: 18%;
@@ -178,10 +178,10 @@ i {
 	font-size: 20px;
 }
 
-#facebook:hover,
-#twitter:hover,
-#google:hover,
-#linkedin:hover {
+.facebook:hover,
+.twitter:hover,
+.google:hover,
+.linkedin:hover {
 	border: 1px solid #fff;
 }
 
